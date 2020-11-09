@@ -1,7 +1,7 @@
 export const SIGN_IN = 'SIGN_IN';
 export const SIGN_OUT = 'SIGN_OUT';
-export const CREATE_STREAM = 'CREATE_STREAM';
-export const FETCH_STREAMS = 'FETCH_STREAMS';
-export const FETCH_STREAM = 'FETCH_STREAM';
-export const DELETE_STREAM = 'DELETE_STREAM';
-export const EDIT_STREAM = 'EDIT_STREAM';
+export const CREATE_CLOTHING = 'CREATE_CLOTHING';
+export const FETCH_CLOTHINGS = 'FETCH_CLOTHINGS';
+export const FETCH_CLOTHING = 'FETCH_CLOTHING';
+export const DELETE_CLOTHING = 'DELETE_CLOTHING';
+export const EDIT_CLOTHING = 'EDIT_CLOTHING';
