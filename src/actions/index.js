@@ -1,11 +1,11 @@
-import clothings from '../apis/clothings';
+import unsplash from '../apis/unplash';
 
 import {
     SIGN_IN,
     SIGN_OUT,
     //CREATE_CLOTHING,
-    //FETCH_CLOTHINGS,
-    FETCH_CLOTHING,
+    FETCH_CLOTHINGS,
+    //FETCH_CLOTHING,
     //DELETE_CLOTHING,
     //EDIT_CLOTHING
 } from './types';
@@ -24,8 +24,9 @@ export const signOut = () => {
     };
 };
 
-export const fetchClothing = id => async dispatch => {
-    const response = await clothings.get(`/clothings/${id}`);
-
-    dispatch({ type: FETCH_CLOTHING, payload: response.data });
+export const fetchClothings = () => async dispatch => {
+    
+    const response = await unsplash.get('/photos');
+    console.log("action fetchClothings",response.data);
+    dispatch({ type: FETCH_CLOTHINGS, payload: response.data });
 };

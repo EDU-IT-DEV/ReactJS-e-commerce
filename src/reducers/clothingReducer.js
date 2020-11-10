@@ -11,7 +11,9 @@ export default (state = {}, action) => {
     
     switch (action.type) {
         case FETCH_CLOTHINGS:
+            console.log("reducer FETCH_CLOTHINGS", action.payload);
             return { ...state, ..._.mapKeys(action.payload, 'id') };
+            
         case FETCH_CLOTHING:
             return { ...state, [action.payload.id]: action.payload };
         case CREATE_CLOTHING:

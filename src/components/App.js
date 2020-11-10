@@ -1,10 +1,6 @@
 import React from 'react';
-import { Router,  Switch } from 'react-router-dom';
-//import StreamCreate from './streams/StreamCreate';
-//import StreamEdit from './streams/StreamEdit';
-//import StreamDelete from './streams/StreamDelete';
-//import StreamList from './streams/StreamList';
-//import StreamShow from './streams/StreamShow';
+import { Router, Route, Switch } from 'react-router-dom';
+import ClothingShow from './clothings/ClothingsList';
 import Header from './Header';
 import history from '../history';
 
@@ -15,7 +11,7 @@ const App = () => {
         <div>
           <Header />
           <Switch>
-           
+            <Route path="/" exact component={ClothingShow} />
           </Switch>
         </div>
       </Router>
