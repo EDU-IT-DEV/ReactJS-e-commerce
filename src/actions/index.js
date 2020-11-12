@@ -25,8 +25,6 @@ export const signOut = () => {
 };
 
 export const fetchClothings = () => async dispatch => {
-    
     const response = await unsplash.get('/photos');
-    console.log("action fetchClothings",response.data);
-    dispatch({ type: FETCH_CLOTHINGS, payload: response.data });
+    dispatch({ type: FETCH_CLOTHINGS, payload: response.data});
 };
